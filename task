@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TASK_FILE="$HOME/.config/tasks.txt"
+TASK_FILE="$HOME/.config/task_for_bash/.tasks.txt"
 
 GREEN="\033[0;32m"
 YELLOW="\033[0;33m"
