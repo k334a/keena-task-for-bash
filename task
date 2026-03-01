@@ -1,25 +1,6 @@
 #!/bin/bash
 
-OLD_TASK_FILE="$HOME/.config/tasks.txt"
-TASK_DIR="$HOME/.config/task_for_bash"
 TASK_FILE="$HOME/.config/tasks.txt"
-
-# --- VERSION 2.0 MIGRATION BLOCK ---
-if [[ -f "$OLD_TASK_FILE" ]]; then
-    mkdir -p "$TASK_DIR"
-    
-    if [[ -f "$TASK_FILE" ]]; then
-        # If both exist, append old tasks to the new file to avoid data loss
-        cat "$OLD_TASK_FILE" >> "$TASK_FILE"
-        rm "$OLD_TASK_FILE"
-        echo "Notice: Merged your old tasks into $TASK_FILE"
-    else
-        # Otherwise, just do a normal move
-        mv "$OLD_TASK_FILE" "$TASK_FILE"
-        echo "Notice: Migrated your tasks file to $TASK_FILE"
-    fi
-fi
-# -----------------------
 
 GREEN="\033[0;32m"
 YELLOW="\033[0;33m"
