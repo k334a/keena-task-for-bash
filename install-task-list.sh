@@ -5,7 +5,7 @@ echo "Keena says, HI!"
 
 echo ""
 
-OLD_TASK_FILE="$HOME/.config/tasks.txt"
+OLD_TASK_FILE="$HOME/.tasks.txt"
 TASK_DIR="$HOME/.config/task_for_bash"
 TASK_FILE="$HOME/.config/tasks.txt"
 
