@@ -17,11 +17,11 @@ if [[ -f "$OLD_TASK_FILE" ]]; then
         # If both exist, append old tasks to the new file to avoid data loss
         cat "$OLD_TASK_FILE" >> "$TASK_FILE"
         rm "$OLD_TASK_FILE"
-        echo "Notice: Merged your old tasks into $TASK_FILE"
+        echo "Notice: Merged your old tasks into $TASK_FILE \n"
     else
         # Otherwise, just do a normal move
         mv "$OLD_TASK_FILE" "$TASK_FILE"
-        echo "Notice: Migrated your tasks file to $TASK_FILE"
+        echo "Notice: Migrated your tasks file to $TASK_FILE \n"
     fi
 fi
 # -----------------------
