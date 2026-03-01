@@ -7,7 +7,7 @@ echo ""
 
 OLD_TASK_FILE="$HOME/.tasks.txt"
 TASK_DIR="$HOME/.config/task_for_bash"
-TASK_FILE="$HOME/.config/tasks.txt"
+TASK_FILE="$HOME/.config/task_for_bash/.tasks.txt"
 
 # --- VERSION 2.0 MIGRATION BLOCK ---
 if [[ -f "$OLD_TASK_FILE" ]]; then
